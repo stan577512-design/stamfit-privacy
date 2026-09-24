@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>StamFit Training — удаление аккаунта и данных</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg:#0b0d10;
+    --bg-elev:#14171c;
+    --card:#171b21;
+    --card-border:#242932;
+    --green:#8fe14a;
+    --green-dim:#5c9b31;
+    --text:#f2f4f6;
+    --text-dim:#8b93a1;
+    --text-faint:#565d68;
+    --danger:#e05a4a;
+    --radius:20px;
+    --radius-sm:14px;
+  }
+  * { box-sizing: border-box; }
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+    line-height: 1.65;
+  }
+  .badge{
+    display:inline-block;
+    background: var(--bg-elev);
+    border:1px solid var(--card-border);
+    color: var(--green);
+    font-size:13px;
+    font-weight:600;
+    padding:4px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  h1{
+    font-size: 1.5em;
+    margin: 0 0 24px;
+    color: var(--text);
+  }
+  .lang-switch{
+    display:flex;
+    gap:8px;
+    margin-bottom: 28px;
+  }
+  .lang-switch button{
+    background: var(--card);
+    border:1px solid var(--card-border);
+    color: var(--text-dim);
+    font-size:14px;
+    font-weight:600;
+    padding:8px 16px;
+    border-radius: 999px;
+    cursor:pointer;
+  }
+  .lang-switch button.active{
+    background: var(--green);
+    border-color: var(--green);
+    color: #0b0d10;
+  }
+  section{ display:none; }
+  section.active{ display:block; }
+  .card{
+    background: var(--card);
+    border:1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 22px 22px 6px;
+    margin-bottom: 18px;
+  }
+  .card h2{
+    font-size: 1.05em;
+    color: var(--green);
+    margin: 0 0 12px;
+  }
+  .card p{ color: var(--text); }
+  .card p.dim{ color: var(--text-dim); font-size: 14px; }
+  strong{ color: var(--green); }
+  .danger-note{
+    background: var(--bg-elev);
+    border:1px solid rgba(224,90,74,.4);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    color: var(--danger);
+    font-size: 14px;
+    margin: 14px 0 20px;
+  }
+  footer{
+    margin-top: 36px;
+    color: var(--text-faint);
+    font-size: 13px;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<span class="badge">StamFit Training</span>
+
+<div class="lang-switch">
+  <button id="btn-ru" onclick="showLang('ru')">Русский</button>
+  <button id="btn-uz" onclick="showLang('uz')">Oʻzbekcha</button>
+  <button id="btn-en" onclick="showLang('en')">English</button>
+</div>
+
+<!-- RUSSIAN -->
+<section id="sec-ru" class="active">
+<h1>Удаление аккаунта и данных</h1>
+
+<div class="card">
+  <h2>Удаление всех данных без удаления аккаунта</h2>
+  <p>Откройте приложение StamFit Training → раздел «Профиль» → кнопка «Сбросить все данные». Это мгновенно и без возможности восстановления удалит с телефона и из облака: ваш профиль (рост, вес, возраст, пол), историю тренировок, историю веса и дневник питания.</p>
+  <p class="dim">Аккаунт (email и пароль) при этом остаётся активным — вы можете продолжить пользоваться приложением, заполнив анкету заново.</p>
+</div>
+
+<div class="card">
+  <h2>Удаление аккаунта целиком</h2>
+  <p>Чтобы удалить сам аккаунт (email, пароль и все связанные с ним данные) без возможности восстановления, напишите на <strong>support.stamfit@gmail.com</strong> с адреса, на который был зарегистрирован аккаунт, с темой письма «Удаление аккаунта».</p>
+  <p class="dim">Мы обработаем запрос и полностью удалим аккаунт и все связанные с ним данные (профиль, историю тренировок, вес, питание) в течение <strong>5 рабочих дней</strong>.</p>
+  <div class="danger-note">⚠ Действие невозможно отменить. Никакие данные не сохраняются после удаления — резервных копий не остаётся.</div>
+</div>
+
+<footer>StamFit Training</footer>
+</section>
+
+<!-- UZBEK -->
+<section id="sec-uz">
+<h1>Akkaunt va maʼlumotlarni oʻchirish</h1>
+
+<div class="card">
+  <h2>Akkauntni oʻchirmasdan barcha maʼlumotlarni oʻchirish</h2>
+  <p>StamFit Training ilovasini oching → «Profil» boʻlimi → «Barcha maʼlumotlarni tozalash» tugmasi. Bu darhol va qaytarib boʻlmaydigan tarzda telefondan va bulutdan quyidagilarni oʻchiradi: profilingiz (boʻy, vazn, yosh, jins), mashqlar tarixi, vazn tarixi va ovqatlanish kundaligi.</p>
+  <p class="dim">Akkaunt (email va parol) shu bilan birga faol qoladi — siz anketani qayta toʻldirib ilovadan foydalanishni davom ettirishingiz mumkin.</p>
+</div>
+
+<div class="card">
+  <h2>Akkauntni butunlay oʻchirish</h2>
+  <p>Akkauntning oʻzini (email, parol va unga bogʻliq barcha maʼlumotlarni) qaytarib boʻlmaydigan tarzda oʻchirish uchun <strong>support.stamfit@gmail.com</strong> manziliga, akkaunt roʻyxatdan oʻtgan email orqali, mavzusi «Akkauntni oʻchirish» boʻlgan xat yuboring.</p>
+  <p class="dim">Biz soʻrovni koʻrib chiqamiz va akkaunt bilan bogʻliq barcha maʼlumotlarni (profil, mashqlar tarixi, vazn, ovqatlanish) <strong>5 ish kuni</strong> ichida butunlay oʻchiramiz.</p>
+  <div class="danger-note">⚠ Bu amalni bekor qilib boʻlmaydi. Oʻchirilgandan keyin hech qanday maʼlumot saqlanmaydi — zaxira nusxalari qolmaydi.</div>
+</div>
+
+<footer>StamFit Training</footer>
+</section>
+
+<!-- ENGLISH -->
+<section id="sec-en">
+<h1>Account &amp; data deletion</h1>
+
+<div class="card">
+  <h2>Deleting all data without deleting your account</h2>
+  <p>Open the StamFit Training app → "Profile" section → "Reset all data" button. This instantly and irreversibly deletes from your phone and the cloud: your profile (height, weight, age, gender), workout history, weight history, and nutrition log.</p>
+  <p class="dim">Your account (email and password) remains active — you can keep using the app after filling out the setup questionnaire again.</p>
+</div>
+
+<div class="card">
+  <h2>Deleting your account entirely</h2>
+  <p>To delete the account itself (email, password, and all data linked to it) irreversibly, email <strong>support.stamfit@gmail.com</strong> from the address the account was registered with, using the subject line "Account deletion".</p>
+  <p class="dim">We will process the request and fully delete the account and all related data (profile, workout history, weight, nutrition) within <strong>5 business days</strong>.</p>
+  <div class="danger-note">⚠ This action cannot be undone. No data is retained after deletion — no backups are kept.</div>
+</div>
+
+<footer>StamFit Training</footer>
+</section>
+
+<script>
+function showLang(lang){
+  document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+  document.getElementById('sec-'+lang).classList.add('active');
+  document.querySelectorAll('.lang-switch button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('btn-'+lang).classList.add('active');
+}
+showLang('ru');
+var hash = window.location.hash.replace('#','');
+if(['ru','uz','en'].includes(hash)) showLang(hash);
+</script>
+
+</body>
+</html>
