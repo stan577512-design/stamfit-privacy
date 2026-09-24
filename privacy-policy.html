@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — StamFit Training</title>
+<style>
+  body{
+    background:#0b0d10; color:#f2f4f6; font-family:"Segoe UI",Roboto,-apple-system,sans-serif;
+    max-width:640px; margin:0 auto; padding:40px 24px 60px; line-height:1.7;
+  }
+  h1{color:#8fe14a; font-size:26px; margin-bottom:4px;}
+  .updated{color:#8b93a1; font-size:13px; margin-bottom:20px;}
+  h2{font-size:17px; margin-top:28px; margin-bottom:8px;}
+  p{color:#dfe3e8; font-size:15px;}
+  a{color:#8fe14a;}
+  .footer{margin-top:48px; color:#565d68; font-size:12px; text-align:center;}
+  .lang-switch{display:flex; gap:8px; margin-bottom:28px; flex-wrap:wrap;}
+  .lang-btn{
+    padding:8px 16px; border-radius:10px; border:1px solid #242932; background:#171b21;
+    color:#8b93a1; font-size:13px; cursor:pointer;
+  }
+  .lang-btn.active{border-color:#8fe14a; color:#8fe14a; background:rgba(143,225,74,.08);}
+  .lang-block{display:none;}
+  .lang-block.active{display:block;}
+</style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button class="lang-btn active" id="btn-ru" onclick="setLang('ru')">Русский</button>
+    <button class="lang-btn" id="btn-uz" onclick="setLang('uz')">Oʻzbekcha</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ============ RUSSIAN ============ -->
+  <div class="lang-block active" id="block-ru">
+    <h1>Политика конфиденциальности</h1>
+    <p class="updated">StamFit Training · действует с 2026 года</p>
+
+    <p>StamFit Training помогает подбирать программу тренировок и вести учёт прогресса. Ниже — простое объяснение того, что происходит с вашими данными.</p>
+
+    <h2>Какие данные хранятся</h2>
+    <p>Профиль (имя, возраст, рост, вес, цель), программа тренировок, история занятий, вес тела по датам, рабочие веса упражнений, дневник питания (что съедено, калории и БЖУ) и достижения хранятся на вашем телефоне. Если вы вошли в аккаунт, те же данные дополнительно хранятся в облаке (Supabase), чтобы их можно было восстановить на другом телефоне — доступ к ним есть только у вас, это обеспечено правилами доступа на уровне базы данных (Row Level Security).</p>
+
+    <h2>Регистрация</h2>
+    <p>Регистрация по email или номеру телефона обязательна перед заполнением профиля — без SMS- или email-подтверждения. Если интернета нет, можно продолжить без аккаунта — тогда данные хранятся только локально, без облачной копии.</p>
+
+    <h2>Пароль и вход</h2>
+    <p>Пароль хранится в Supabase в захешированном виде — ни мы, ни кто-либо ещё не видит его в открытом виде. Номер телефона при регистрации технически превращается в служебный email для входа и нигде не подтверждается через SMS. Выйти из аккаунта можно в любой момент кнопкой «Выйти» в профиле — локальные данные при этом останутся на телефоне, перестанет обновляться только облачная копия.</p>
+
+    <h2>Удаление данных</h2>
+    <p>Без аккаунта удаление приложения стирает всё безвозвратно. С аккаунтом — данные можно восстановить, войдя на новом телефоне под тем же логином. Кнопка «Сбросить все данные» в профиле удаляет данные и на телефоне, и в облаке (если вы вошли в аккаунт) — без возможности восстановления.</p>
+
+    <h2>Сторонние сервисы</h2>
+    <p>Приложение использует Supabase для аккаунта и облачного бэкапа (см. выше) и загружает фирменные шрифты с серверов Google Fonts при первом запуске с интернетом — Google при этом может технически видеть стандартные данные запроса (IP-адрес, User-Agent) согласно своей политике конфиденциальности. Больше приложение ни с кем не связывается.</p>
+
+    <h2>Реклама и аналитика</h2>
+    <p>В приложении нет рекламы, рекламных SDK, трекеров и систем аналитики.</p>
+
+    <h2>Уведомления</h2>
+    <p>Приложение может показывать одно ежедневное локальное напоминание о тренировке. Оно формируется на самом устройстве и не связано с передачей каких-либо данных на сервер.</p>
+
+    <h2>Дети и возраст</h2>
+    <p>При заполнении профиля вы сами указываете свой возраст — без него нельзя точно рассчитать суточную норму калорий и белка. Возраст хранится вместе с остальными данными профиля (см. выше) и нигде отдельно не используется и никому не передаётся. Приложение рассчитано на пользователей от 12 лет; если вам меньше — пользуйтесь вместе со взрослым.</p>
+
+    <h2>Ваши права</h2>
+    <p>Вы можете в любой момент удалить все данные кнопкой «Сбросить все данные» в профиле. По вопросам удаления самого аккаунта целиком — пишите на контакты ниже.</p>
+
+    <h2>Контакты</h2>
+    <p>По вопросам, связанным с этой политикой, пишите на <a href="mailto:support.stamfit@gmail.com">support.stamfit@gmail.com</a>.</p>
+  </div>
+
+  <!-- ============ UZBEK ============ -->
+  <div class="lang-block" id="block-uz">
+    <h1>Maxfiylik siyosati</h1>
+    <p class="updated">StamFit Training · 2026-yildan amalda</p>
+
+    <p>StamFit Training mashq dasturini tanlash va progressni kuzatib borishga yordam beradi. Quyida maʼlumotlaringiz bilan nima sodir boʻlishi oddiy tilda tushuntirilgan.</p>
+
+    <h2>Qanday maʼlumotlar saqlanadi</h2>
+    <p>Profil (ism, yosh, boʻy, vazn, maqsad), mashq dasturi, mashgʻulotlar tarixi, sanalar boʻyicha tana vazni, ish vazni, ovqatlanish kundaligi (nima yeyilgani, kaloriya va BJU) va yutuqlar telefoningizda saqlanadi. Agar hisobga kirgan boʻlsangiz, xuddi shu maʼlumotlar boshqa telefonda tiklash imkoni boʻlishi uchun bulutda (Supabase) ham qoʻshimcha saqlanadi — ularga faqat sizning oʻzingiz kira olasiz, bu maʼlumotlar bazasi darajasidagi kirish qoidalari (Row Level Security) bilan taʼminlangan.</p>
+
+    <h2>Roʻyxatdan oʻtish</h2>
+    <p>Profilni toʻldirishdan oldin email yoki telefon raqami orqali roʻyxatdan oʻtish shart — SMS yoki email tasdiqlashsiz. Internet boʻlmasa, hisobsiz davom etish mumkin — bunda maʼlumotlar faqat mahalliy saqlanadi, bulutli nusxasiz.</p>
+
+    <h2>Parol va kirish</h2>
+    <p>Parol Supabase’da xeshlangan koʻrinishda saqlanadi — uni ochiq holda na biz, na boshqa hech kim koʻra olmaydi. Roʻyxatdan oʻtishda telefon raqami texnik jihatdan kirish uchun xizmat email’iga aylantiriladi va hech qayerda SMS orqali tasdiqlanmaydi. Profildagi «Chiqish» tugmasi orqali istalgan vaqtda hisobdan chiqishingiz mumkin — telefondagi mahalliy maʼlumotlar shu joyida qoladi, faqat bulutli nusxa yangilanishni toʻxtatadi.</p>
+
+    <h2>Maʼlumotlarni oʻchirish</h2>
+    <p>Hisobsiz ilovani oʻchirish hammasini qaytarib boʻlmaydigan tarzda oʻchiradi. Hisob bilan esa — yangi telefonda xuddi shu login bilan kirish maʼlumotlarni tiklash uchun yetarli. Profildagi «Barcha maʼlumotlarni tozalash» tugmasi maʼlumotlarni ham telefonda, ham bulutda (agar hisobga kirgan boʻlsangiz) qaytarib boʻlmaydigan tarzda oʻchiradi.</p>
+
+    <h2>Uchinchi tomon xizmatlari</h2>
+    <p>Ilova hisob va bulutli zaxira nusxa uchun Supabase’dan foydalanadi (yuqoriga qarang) va birinchi marta internet bilan ishga tushirilganda Google Fonts serverlaridan brend shriftlarini yuklaydi — Google oʻz maxfiylik siyosatiga koʻra so'rovning standart maʼlumotlarini (IP-manzil, User-Agent) texnik jihatdan koʻrishi mumkin. Bundan boshqa hech kim bilan ilova bogʻlanmaydi.</p>
+
+    <h2>Reklama va analitika</h2>
+    <p>Ilovada reklama, reklama SDKʻlari, trekerlar va analitika tizimlari yoʻq.</p>
+
+    <h2>Bildirishnomalar</h2>
+    <p>Ilova kuniga bitta mahalliy mashq eslatmasini koʻrsatishi mumkin. Bu bildirishnoma qurilmaning oʻzida shakllanadi va serverga hech qanday maʼlumot yuborish bilan bogʻliq emas.</p>
+
+    <h2>Bolalar va yosh</h2>
+    <p>Profilni toʻldirishda siz oʻzingizning yoshingizni kiritasiz — usiz kunlik kaloriya va oqsil me'yorini aniq hisoblab boʻlmaydi. Yosh boshqa profil maʼlumotlari bilan birga saqlanadi (yuqoriga qarang) va alohida hech qayerda ishlatilmaydi hamda hech kimga uzatilmaydi. Ilova 12 yoshdan katta foydalanuvchilar uchun moʻljallangan; agar yoshingiz kichik boʻlsa — kattalar bilan birga foydalaning.</p>
+
+    <h2>Sizning huquqlaringiz</h2>
+    <p>Istalgan vaqtda profildagi «Barcha maʼlumotlarni tozalash» tugmasi bilan barcha maʼlumotlaringizni oʻchirishingiz mumkin. Hisobning oʻzini butunlay oʻchirish boʻyicha quyidagi kontaktlarga yozing.</p>
+
+    <h2>Aloqa</h2>
+    <p>Ushbu siyosat boʻyicha savollar uchun <a href="mailto:support.stamfit@gmail.com">support.stamfit@gmail.com</a> manziliga yozing.</p>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div class="lang-block" id="block-en">
+    <h1>Privacy Policy</h1>
+    <p class="updated">StamFit Training · effective since 2026</p>
+
+    <p>StamFit Training helps you get a workout program and track your progress. Below is a plain-language explanation of what happens with your data.</p>
+
+    <h2>What data is stored</h2>
+    <p>Your profile (name, age, height, weight, goal), workout program, session history, body weight over time, exercise working weights, food diary (what you ate, calories, and macros), and achievements are stored on your phone. If you're logged in, the same data is also stored in the cloud (Supabase) so it can be restored on another phone — only you have access to it, enforced at the database level via Row Level Security.</p>
+
+    <h2>Registration</h2>
+    <p>Registering with an email or phone number is required before filling in your profile — no SMS or email confirmation needed. If there's no internet, you can continue without an account — then data is stored locally only, with no cloud copy.</p>
+
+    <h2>Password and login</h2>
+    <p>Your password is stored hashed in Supabase — neither we nor anyone else can see it in plain text. At registration, a phone number is technically converted into a service email for login purposes and is never verified by SMS. You can log out at any time using "Log out" in your profile — local data on your phone stays put, only the cloud copy stops updating.</p>
+
+    <h2>Deleting data</h2>
+    <p>Without an account, deleting the app erases everything permanently. With an account, logging in on a new phone with the same credentials restores your data. The "Reset all data" button in your profile permanently deletes data both on your phone and in the cloud (if you're logged in).</p>
+
+    <h2>Third-party services</h2>
+    <p>The app uses Supabase for your account and cloud backup (see above) and loads brand fonts from Google Fonts servers on first launch with internet access — Google may technically see standard request data (IP address, user agent) under its own privacy policy. Other than that, the app doesn't contact anyone.</p>
+
+    <h2>Ads and analytics</h2>
+    <p>The app has no ads, ad SDKs, trackers, or analytics systems.</p>
+
+    <h2>Notifications</h2>
+    <p>The app may show one daily local reminder about your workout. It's generated on the device itself and isn't tied to sending any data to a server.</p>
+
+    <h2>Children and age</h2>
+    <p>When setting up your profile, you enter your own age — it's needed to accurately calculate your daily calorie and protein targets. Age is stored together with the rest of your profile data (see above) and isn't used separately or shared with anyone else. The app is intended for users aged 12 and up; if you're younger, please use it together with an adult.</p>
+
+    <h2>Your rights</h2>
+    <p>You can delete all your data at any time using "Reset all data" in your profile. To delete your account entirely, write to the contact below.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this policy, write to <a href="mailto:support.stamfit@gmail.com">support.stamfit@gmail.com</a>.</p>
+  </div>
+
+  <div class="footer">© StamFit 2026</div>
+
+<script>
+function setLang(lang){
+  ['ru','uz','en'].forEach(l=>{
+    document.getElementById('block-'+l).classList.toggle('active', lang===l);
+    document.getElementById('btn-'+l).classList.toggle('active', lang===l);
+  });
+  document.documentElement.lang = lang;
+}
+</script>
+</body>
+</html>
