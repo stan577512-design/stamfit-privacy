@@ -43,13 +43,13 @@
     <p>Профиль (имя, возраст, рост, вес, цель), программа тренировок, история занятий, вес тела по датам, рабочие веса упражнений, дневник питания (что съедено, калории и БЖУ) и достижения хранятся на вашем телефоне. Если вы вошли в аккаунт, те же данные дополнительно хранятся в облаке (Supabase), чтобы их можно было восстановить на другом телефоне — доступ к ним есть только у вас, это обеспечено правилами доступа на уровне базы данных (Row Level Security).</p>
 
     <h2>Регистрация</h2>
-    <p>Регистрация по email или номеру телефона обязательна перед заполнением профиля — без SMS- или email-подтверждения. Если интернета нет, можно продолжить без аккаунта — тогда данные хранятся только локально, без облачной копии.</p>
+    <p>Регистрация по email или номеру телефона обязательна перед заполнением профиля — без SMS- или email-подтверждения.</p>
 
     <h2>Пароль и вход</h2>
     <p>Пароль хранится в Supabase в захешированном виде — ни мы, ни кто-либо ещё не видит его в открытом виде. Номер телефона при регистрации технически превращается в служебный email для входа и нигде не подтверждается через SMS. Выйти из аккаунта можно в любой момент кнопкой «Выйти» в профиле — локальные данные при этом останутся на телефоне, перестанет обновляться только облачная копия.</p>
 
     <h2>Удаление данных</h2>
-    <p>Без аккаунта удаление приложения стирает всё безвозвратно. С аккаунтом — данные можно восстановить, войдя на новом телефоне под тем же логином. Кнопка «Сбросить все данные» в профиле удаляет данные и на телефоне, и в облаке (если вы вошли в аккаунт) — без возможности восстановления.</p>
+    <p>Все данные дублируются в облаке, поэтому удаление приложения не приводит к потере прогресса — войдите на новом телефоне под тем же логином, и данные восстановятся. Кнопка «Сбросить все данные» в профиле удаляет данные и на телефоне, и в облаке — без возможности восстановления.</p>
 
     <h2>Сторонние сервисы</h2>
     <p>Приложение использует Supabase для аккаунта и облачного бэкапа (см. выше) и загружает фирменные шрифты с серверов Google Fonts при первом запуске с интернетом — Google при этом может технически видеть стандартные данные запроса (IP-адрес, User-Agent) согласно своей политике конфиденциальности. Больше приложение ни с кем не связывается.</p>
@@ -81,13 +81,13 @@
     <p>Profil (ism, yosh, boʻy, vazn, maqsad), mashq dasturi, mashgʻulotlar tarixi, sanalar boʻyicha tana vazni, ish vazni, ovqatlanish kundaligi (nima yeyilgani, kaloriya va BJU) va yutuqlar telefoningizda saqlanadi. Agar hisobga kirgan boʻlsangiz, xuddi shu maʼlumotlar boshqa telefonda tiklash imkoni boʻlishi uchun bulutda (Supabase) ham qoʻshimcha saqlanadi — ularga faqat sizning oʻzingiz kira olasiz, bu maʼlumotlar bazasi darajasidagi kirish qoidalari (Row Level Security) bilan taʼminlangan.</p>
 
     <h2>Roʻyxatdan oʻtish</h2>
-    <p>Profilni toʻldirishdan oldin email yoki telefon raqami orqali roʻyxatdan oʻtish shart — SMS yoki email tasdiqlashsiz. Internet boʻlmasa, hisobsiz davom etish mumkin — bunda maʼlumotlar faqat mahalliy saqlanadi, bulutli nusxasiz.</p>
+    <p>Profilni toʻldirishdan oldin email yoki telefon raqami orqali roʻyxatdan oʻtish shart — SMS yoki email tasdiqlashsiz.</p>
 
     <h2>Parol va kirish</h2>
     <p>Parol Supabase’da xeshlangan koʻrinishda saqlanadi — uni ochiq holda na biz, na boshqa hech kim koʻra olmaydi. Roʻyxatdan oʻtishda telefon raqami texnik jihatdan kirish uchun xizmat email’iga aylantiriladi va hech qayerda SMS orqali tasdiqlanmaydi. Profildagi «Chiqish» tugmasi orqali istalgan vaqtda hisobdan chiqishingiz mumkin — telefondagi mahalliy maʼlumotlar shu joyida qoladi, faqat bulutli nusxa yangilanishni toʻxtatadi.</p>
 
     <h2>Maʼlumotlarni oʻchirish</h2>
-    <p>Hisobsiz ilovani oʻchirish hammasini qaytarib boʻlmaydigan tarzda oʻchiradi. Hisob bilan esa — yangi telefonda xuddi shu login bilan kirish maʼlumotlarni tiklash uchun yetarli. Profildagi «Barcha maʼlumotlarni tozalash» tugmasi maʼlumotlarni ham telefonda, ham bulutda (agar hisobga kirgan boʻlsangiz) qaytarib boʻlmaydigan tarzda oʻchiradi.</p>
+    <p>Barcha maʼlumotlar bulutda ham saqlanadi, shuning uchun ilovani oʻchirish progressni yoʻqotmaydi — yangi telefonda xuddi shu login bilan kiring, va maʼlumotlar tiklanadi. Profildagi «Barcha maʼlumotlarni tozalash» tugmasi maʼlumotlarni ham telefonda, ham bulutda qaytarib boʻlmaydigan tarzda oʻchiradi.</p>
 
     <h2>Uchinchi tomon xizmatlari</h2>
     <p>Ilova hisob va bulutli zaxira nusxa uchun Supabase’dan foydalanadi (yuqoriga qarang) va birinchi marta internet bilan ishga tushirilganda Google Fonts serverlaridan brend shriftlarini yuklaydi — Google oʻz maxfiylik siyosatiga koʻra so'rovning standart maʼlumotlarini (IP-manzil, User-Agent) texnik jihatdan koʻrishi mumkin. Bundan boshqa hech kim bilan ilova bogʻlanmaydi.</p>
@@ -119,13 +119,13 @@
     <p>Your profile (name, age, height, weight, goal), workout program, session history, body weight over time, exercise working weights, food diary (what you ate, calories, and macros), and achievements are stored on your phone. If you're logged in, the same data is also stored in the cloud (Supabase) so it can be restored on another phone — only you have access to it, enforced at the database level via Row Level Security.</p>
 
     <h2>Registration</h2>
-    <p>Registering with an email or phone number is required before filling in your profile — no SMS or email confirmation needed. If there's no internet, you can continue without an account — then data is stored locally only, with no cloud copy.</p>
+    <p>Registering with an email or phone number is required before filling in your profile — no SMS or email confirmation needed.</p>
 
     <h2>Password and login</h2>
     <p>Your password is stored hashed in Supabase — neither we nor anyone else can see it in plain text. At registration, a phone number is technically converted into a service email for login purposes and is never verified by SMS. You can log out at any time using "Log out" in your profile — local data on your phone stays put, only the cloud copy stops updating.</p>
 
     <h2>Deleting data</h2>
-    <p>Without an account, deleting the app erases everything permanently. With an account, logging in on a new phone with the same credentials restores your data. The "Reset all data" button in your profile permanently deletes data both on your phone and in the cloud (if you're logged in).</p>
+    <p>All data is also backed up to the cloud, so deleting the app doesn't erase your progress — log in on a new phone with the same credentials and your data is restored. The "Reset all data" button in your profile permanently deletes data both on your phone and in the cloud.</p>
 
     <h2>Third-party services</h2>
     <p>The app uses Supabase for your account and cloud backup (see above) and loads brand fonts from Google Fonts servers on first launch with internet access — Google may technically see standard request data (IP address, user agent) under its own privacy policy. Other than that, the app doesn't contact anyone.</p>
